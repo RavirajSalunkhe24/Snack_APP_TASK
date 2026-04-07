@@ -37,10 +37,10 @@ class SnackCard extends StatelessWidget {
                 ),
 
                 /// ❌ If image fails
-                errorWidget: (context, url, error) => Container(
+               errorWidget: (context, url, error) => Container(
                   color: Colors.grey[300],
                   child: const Icon(
-                    Icons.image_not_supported,
+                    Icons.fastfood,
                     size: 40,
                     color: Colors.grey,
                   ),

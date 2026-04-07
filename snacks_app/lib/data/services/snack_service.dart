@@ -6,9 +6,9 @@ class SnackService {
   final String baseUrl =
       "https://sweetie-catering-api.demohub.tech/api/v1/public/snacks";
 
-  final String imageBase = "https://sweetie-catering-api.demohub.tech/uploads/";
+  final String imageBase =
+      "https://sweetie-catering-api.demohub.tech/api/v1/uploads/";
 
-  
   String buildImageUrl(String path) {
     if (path.isEmpty) return "";
 
@@ -31,7 +31,6 @@ class SnackService {
 
       List<Snack> allSnacks = [];
 
-      
       void extractItems(String key) {
         final items = menu[key]?['items'] ?? [];
 
